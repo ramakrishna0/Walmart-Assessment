@@ -30,7 +30,7 @@ public class Driver {
 						System.out.println(newEntry + " - Invalid number of Seats");
 					
 					if (output == -1) 
-						System.out.println(newEntry + " - Sorry, cannot process request due to Insufficient seats");
+						System.out.println(newEntry + " - Sorry, cannot process the request due to Insufficient seats");
 					
 					newEntry = bufferedReader.readLine();
 				}

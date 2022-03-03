@@ -24,7 +24,7 @@ The algorithm follows following rules:
 _Customer Satisfaction:_
 
 1. Since customers are reserving seats for groups, they would prefer sitting next to each other. So the first priority will be to allocate seats for the group in a single row.
-2. Since the middle seats give a better viewing experience in the movie theater, customers who come first will be allocated seats in the middle rows.
+2. Since the middle row seats give a better viewing experience in the movie theater, customers who come first will be allocated seats in the middle rows.
 
 _Maximum Theater Utilization:_
 
@@ -34,7 +34,7 @@ _Maximum Theater Utilization:_
 **Steps for running**
 1. Download and save the src folder in a directory.
 2. Compile all the java files driver.java, MovieTheater.java, FileProcessor.java, TestTheaterSeating.java
-3. Go to the commandline inside the folder where you have stored the src folder and compile the files using the following command:
+3. Go to the commandline inside the src folder and compile the files using the following command:
 	javac challenge/TheaterSeating/driver/Driver.java challenge/TheaterSeating/service/MovieTheater.java challenge/TheaterSeating/util/FileProcessor.java challenge/TheaterSeating/test/TestTheaterSeating.java
-4. Go into the driver folder through the command prompt and run the program with the following command:
+4. In command prompt run the Driver class with the following command:
 	java challenge.TheaterSeating.driver.Driver "D:\Walmart Assessment\Movie-Theater\input.txt"  

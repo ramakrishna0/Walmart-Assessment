@@ -22,9 +22,9 @@ public class TestTheaterSeating {
 
 	private void checkReservationWithZeroTickets(){
 		if(testTheater.bookSeat("R001 0")== 1){
-			System.out.println("Test 1 Passed : No seat reserved for Reservation Id R001 with requirement of zero seats.");
+			System.out.println("Test 1 Passed: No seat reserved for Reservation Id R001 with the requirement of zero seats.");
 		}else{
-			System.out.println("Test 1 Failed : Reservation made for R001 with zero requirement of seats.");
+			System.out.println("Test 1 Failed: Reservation made for R001 with zero requirement of seats.");
 		}
 	}
 	private void checkFirstCustomerSeat() {
@@ -37,9 +37,9 @@ public class TestTheaterSeating {
 		list.add("E4");
 		list.add("E5");
 		if (testTheater.getResults().get("R002").equals(list)) {
-			System.out.println("Test 2 Passed : 5 Seats successfully reserved for first customer at the middle row.");
+			System.out.println("Test 2 Passed: 5 Seats successfully reserved for the first customer in the middle row.");
 		} else {
-			System.out.println("Test 2 Failed: Failed to reserve seats for first customer at the middle row.");
+			System.out.println("Test 2 Failed: Failed to reserve seats for the first customer in the middle row.");
 		}
 	}
 
@@ -51,10 +51,10 @@ public class TestTheaterSeating {
 		list.add("R002");
 		list.add("R002");
 		if (testTheater.getList(4, 0, 4).equals(list)) {
-			System.out.println("Test 3 Passed : 5 Consecutive seats successfully reserved for first customer row E.");
+			System.out.println("Test 3 Passed: 5 Consecutive seats successfully reserved for first customer row E.");
 
 		} else {
-			System.out.println("Test 3 Failed : Failed to reserve consecutive seats.");
+			System.out.println("Test 3 Failed: Failed to reserve consecutive seats.");
 		}
 
 	}
@@ -62,18 +62,18 @@ public class TestTheaterSeating {
 	public void checkInsufficientSeats() {
 		testTheater.bookSeat("R003 250");
 		if (testTheater.getNumberOfSeats() > 0) {
-			System.out.println("Test 4 Passed : Failed to allocate seats when the request was greater than the available seats.");
+			System.out.println("Test 4 Passed: Failed to allocate seats when the request was greater than the available seats.");
 		} else {
-			System.out.println(" Test 4 Failed : Allocated as many seta as possible.");
+			System.out.println(" Test 4 Failed: Allocated as many seta as possible.");
 		}
 	}
 
 	public void checkGroupUnableToAccomodateInRow() {
 		int result = testTheater.bookSeat("R004 24");
 		if (result == 0) {
-			System.out.println("Test 5 Passed : Successfully allocated seats to a large group that could not be accomodated in a row.");
+			System.out.println("Test 5 Passed: Successfully allocated seats to a large group that could not be accommodated in a row.");
 		} else {
-			System.out.println("Test 5 Failed : Failed to allocate seats to a large group.");
+			System.out.println("Test 5 Failed: Failed to allocate seats to a large group.");
 		}
 	}
 	
@@ -104,9 +104,9 @@ public class TestTheaterSeating {
 		list.add("E8");
 		list.add("E9");
 		if(testTheater.getResults().get("R004").equals(list)){
-			System.out.println("Test 6 Passed : Successfully accomodated a group that could not be accomodated in a single row.");
+			System.out.println("Test 6 Passed: Successfully accommodated a group that could not be accommodated in a single row.");
 		}else{
-			System.out.println(" Test 6 Failed : Failed to accomodate the group that could not be accomodated in a single row.");
+			System.out.println(" Test 6 Failed: Failed to accommodate the group that could not be accommodated in a single row.");
 		}
 	}
 	
