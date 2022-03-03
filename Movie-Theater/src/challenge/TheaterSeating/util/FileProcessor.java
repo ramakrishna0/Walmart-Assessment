@@ -12,6 +12,7 @@ public class FileProcessor {
 	private final String OUTPUT = "D:\\Walmart Assessment\\Movie-Theater\\output.txt";
 
 	public void writeToFile(LinkedHashMap<String, ArrayList<String>> hm) {
+		System.out.println("********************* BOOKINGS **********************");
 		BufferedWriter wr = null;
 		try {
 			wr = new BufferedWriter(new FileWriter(OUTPUT));
