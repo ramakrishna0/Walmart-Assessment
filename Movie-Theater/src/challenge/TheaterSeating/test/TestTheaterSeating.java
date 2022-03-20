@@ -10,7 +10,7 @@ public class TestTheaterSeating {
 	MovieTheater testTheater;
 
 	public void testMe(MovieTheater movieTheaterIn) {
-		System.out.println("***** TESTING ******");
+		System.out.println("********************** TESTING **********************");
 		testTheater = movieTheaterIn;
 		checkReservationWithZeroTickets();
 		checkFirstCustomerSeat();
